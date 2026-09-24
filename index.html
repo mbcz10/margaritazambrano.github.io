@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jordan Reyes — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#101615;
+    --paper:#EEE8DD;
+    --paper-dim:#B9B2A3;
+    --gold:#B8862E;
+    --line:#3A423F;
+    --maxw:640px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--paper);
+    font-family:'IBM Plex Sans',sans-serif;
+    line-height:1.6;
+    font-size:17px;
+  }
+  h1,h2,.display{
+    font-family:'Newsreader',serif;
+    font-weight:600;
+    line-height:1.15;
+    margin:0;
+  }
+  a{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(184,134,46,0.4);}
+  a:hover{border-bottom-color:var(--gold);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+
+  header{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:96px 24px 64px;
+  }
+  header p.role{
+    margin:14px 0 0;
+    color:var(--paper-dim);
+    font-size:19px;
+  }
+  h1{font-size:clamp(36px,6vw,54px); font-style:italic;}
+
+  nav{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:0 24px 48px;
+    display:flex;
+    gap:28px;
+    font-size:15px;
+  }
+  nav a{border-bottom:none; color:var(--paper); opacity:0.7;}
+  nav a:hover{opacity:1;}
+
+  section{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:56px 24px;
+    border-top:1px solid var(--line);
+  }
+  section h2{font-size:26px; margin-bottom:28px;}
+
+  .work-item{margin-bottom:36px;}
+  .work-item:last-child{margin-bottom:0;}
+  .work-item h3{
+    font-family:'IBM Plex Sans',sans-serif;
+    font-weight:500;
+    font-size:18px;
+    margin:0 0 6px;
+  }
+  .work-item p{margin:0 0 8px; color:var(--paper-dim); max-width:56ch;}
+  .work-item .meta{font-size:14px; color:var(--paper-dim); opacity:0.8;}
+
+  .about p{max-width:58ch; color:var(--paper-dim);}
+  .about p + p{margin-top:16px;}
+
+  .contact-list{list-style:none; padding:0; margin:0;}
+  .contact-list li{margin-bottom:10px;}
+
+  footer{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:40px 24px 80px;
+    color:var(--paper-dim);
+    font-size:14px;
+  }
+
+  @media (max-width:480px){
+    header{padding:64px 20px 40px;}
+    nav{flex-wrap:wrap; gap:16px 24px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Jordan Reyes</h1>
+  <p class="role">Software engineer building tools for small teams.</p>
+</header>
+
+<nav>
+  <a href="#work">Work</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="work">
+  <h2>Selected work</h2>
+
+  <div class="work-item">
+    <h3>Routine — habit tracker for shared households</h3>
+    <p>A lightweight app for splitting recurring chores fairly, with a scheduling algorithm that learns who's been doing what.</p>
+    <p class="meta">React, Node, PostgreSQL — <a href="#">view project</a></p>
+  </div>
+
+  <div class="work-item">
+    <h3>Ledger — plain-text budgeting for freelancers</h3>
+    <p>Command-line tool that turns a folder of receipts into a monthly cash-flow report, no spreadsheet required.</p>
+    <p class="meta">Python, SQLite — <a href="#">view project</a></p>
+  </div>
+
+  <div class="work-item">
+    <h3>Signal — status page for small on-call teams</h3>
+    <p>Self-hosted incident tracker built for teams too small to justify an enterprise tool.</p>
+    <p class="meta">Go, HTMX — <a href="#">view project</a></p>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>About</h2>
+  <p>I'm a backend-leaning engineer who likes small, well-made tools over sprawling platforms. Most of what I build starts as something I needed myself.</p>
+  <p>Outside of work I teach a weekend coding class for high schoolers, and I'm slowly restoring an old sailboat.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <ul class="contact-list">
+    <li>Email — <a href="mailto:jordan@example.com">jordan@example.com</a></li>
+    <li>GitHub — <a href="https://github.com/yourusername">github.com/yourusername</a></li>
+    <li>LinkedIn — <a href="https://linkedin.com/in/yourusername">linkedin.com/in/yourusername</a></li>
+  </ul>
+</section>
+
+<footer>
+  Built and hosted with GitHub Pages.
+</footer>
+
+</body>
+</html>
